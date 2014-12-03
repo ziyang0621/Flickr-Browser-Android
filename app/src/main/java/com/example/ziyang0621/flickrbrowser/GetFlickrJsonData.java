@@ -15,7 +15,7 @@ import java.util.List;
  */
 public class GetFlickrJsonData extends GetRawData {
 
-    private String LOG_TAG = GetFlickrJsonData.class.getSimpleName();
+    private static final String LOG_TAG = GetFlickrJsonData.class.getSimpleName();
     private List<Photo> mPhotos;
     private Uri mDestinationUri;
 
@@ -47,6 +47,10 @@ public class GetFlickrJsonData extends GetRawData {
                 .build();
 
         return mDestinationUri != null;
+    }
+
+    public List<Photo> getPhotos() {
+        return mPhotos;
     }
 
     public void processResult() {
@@ -99,7 +103,8 @@ public class GetFlickrJsonData extends GetRawData {
         }
 
         protected String doInBackground(String... params) {
-            return super.doInBackground(params);
+            String[] par = {mDestinationUri.toString()};
+            return super.doInBackground(par);
         }
     }
 }
