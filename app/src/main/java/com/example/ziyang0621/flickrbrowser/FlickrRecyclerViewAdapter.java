@@ -49,4 +49,8 @@ public class FlickrRecyclerViewAdapter extends RecyclerView.Adapter<FlickrImageV
         mPhotoList = newPhotos;
         notifyDataSetChanged();
     }
+
+    public Photo getPhoto(int position) {
+        return (null != mPhotoList ? mPhotoList.get(position) : null);
+    }
 }

@@ -1,9 +1,14 @@
 package com.example.ziyang0621.flickrbrowser;
 
+import java.io.Serializable;
+
 /**
  * Created by ziyang0621 on 12/3/14.
  */
-public class Photo {
+public class Photo implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
     private String mTitle;
     private String mAuthor;
     private String mAuthorId;
@@ -18,6 +23,10 @@ public class Photo {
         mLink = link;
         mTags = tags;
         mImage = image;
+    }
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
     }
 
     public String getTitle() {
