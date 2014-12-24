@@ -1,7 +1,7 @@
 
 # Material Design Flickr-Browser Android app Demo
 
-This is a material design Android demo application for displaying the Yelp search using the [Flickr API](https://www.flickr.com/services/feeds/). 
+This is a material design Android demo application for displaying the Flickr search using the [Flickr API](https://www.flickr.com/services/feeds/). 
 
 See [Udemy Android Lollipop course](https://www.udemy.com/android-lollipop-complete-development-course/?dtcode=eYA5dzE219QS) for step-by-step tutorial.
 
